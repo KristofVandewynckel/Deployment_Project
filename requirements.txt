@@ -1,0 +1,18 @@
+certifi==2021.10.8
+cffi @ file:///D:/bld/cffi_1636046270630/work
+click @ file:///C:/ci/click_1646056762388/work
+colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
+cryptography @ file:///D:/bld/cryptography_1649035392887/work
+dnspython @ file:///home/conda/feedstock_root/build_artifacts/dnspython_1646621171513/work
+email-validator @ file:///home/conda/feedstock_root/build_artifacts/email-validator-meta_1650880767032/work
+Flask @ file:///opt/conda/conda-bld/flask_1648041541647/work
+Flask-WTF==1.0.1
+gunicorn==20.1.0
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1642433548627/work
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2 @ file:///opt/conda/conda-bld/jinja2_1647436528585/work
+MarkupSafe @ file:///C:/ci_310/markupsafe_1642084045935/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work
+wincertstore==0.2
+WTForms==3.0.1
