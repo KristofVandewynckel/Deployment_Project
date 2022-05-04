@@ -29,13 +29,12 @@
               <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
               <a class="nav-item nav-link" href="{{ url_for('predict') }}">Predict</a>
               <a class="nav-item nav-link" href="{{ url_for('result') }}">Result</a>
-              
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main role="main" class="container">
+    <main >
       <div class="row">
         <div class="col-md-8">
           {% with messages = get_flashed_messages(with_categories=true) %}
@@ -48,16 +47,6 @@
             {% endif %}
           {% endwith %}
           {% block content %}{% endblock %}
-        </div>
-        <div class="col-md-4">
-          <div class="content-section">
-            <h3>Our Sidebar</h3>
-            <p class='text-muted'>Latest predictions
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Latest Predictions</li>
-              </ul>
-            </p>
-          </div>
         </div>
       </div>
     </main>
