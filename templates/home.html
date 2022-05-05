@@ -1,5 +1,44 @@
-{% extends "layout.html" %}
-{% block content %}
-    <h1>IT'S ALIVE!!</h1>
-    <p align="center"></p><div class="tenor-gif-embed" data-postid="5625959" data-share-method="host" align="center data-aspect-ratio="1.35135" data-width="100%" width = "200" height="200"><a href="https://tenor.com/view/frankenstein-its-alive-happy-excited-gif-5625959">Frankenstein Its Alive GIF</a>from <a href="https://tenor.com/search/frankenstein-gifs">Frankenstein GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></p>
-{% endblock content%}
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body >
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            <a class="navbar-brand mr-4" href="/">Real Estate Price Prediction</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+                <a class="nav-item nav-link" href="{{ url_for('predict') }}">Predict</a>
+                <a class="nav-item nav-link" href="{{ url_for('result') }}">Result</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <style>
+        body {
+          background-image: url('https://www.cjsr.com/wp-content/uploads/2017/06/itsalive.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+
+</body>
+</html>
