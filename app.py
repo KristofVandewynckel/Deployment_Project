@@ -12,11 +12,11 @@ def home():
     return render_template('home.html')
 
 @app.route('/predict', methods=['GET','POST'])
-def predict():
+def form():
     return render_template('form.html')
 
 @app.route('/result', methods=['GET','POST'])
-def result():
+def predict():
     bedrooms = request.form.get("Rooms", type=int)
     liv_area = request.form.get("Living Area", type=int)
     surface_area = request.form.get("Surface Land Area", type=int)
