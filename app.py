@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-from sympy import N
 import pickle
 import numpy as np
 import math
