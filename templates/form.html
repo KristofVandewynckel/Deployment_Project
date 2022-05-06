@@ -22,7 +22,7 @@
 				<div class="collapse navbar-collapse" id="navbarToggle">
 					<div class="navbar-nav mr-auto">
 					<a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
-					<a class="nav-item nav-link" href="{{ url_for('predict') }}">Predict</a>
+					<a class="nav-item nav-link" href="{{ url_for('form') }}">Predict</a>
 					</div>
 				</div>
 				</div>
@@ -37,7 +37,7 @@
 			<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<form class="form-horizontal" action={{ url_for('result') }}  method="post">
+				<form class="form-horizontal" action={{ url_for('predict') }}  method="post">
 					<div class="form-group">
 						<label class="control-label col-xs-3" for="Area">Location:</label>
 						<div class="col-xs-7">
