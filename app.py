@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from sympy import N
 import pickle
 import numpy as np
+import math
 
 app = Flask(__name__)
 
@@ -72,7 +73,7 @@ def result():
     int_features = [int(x) for x in request_values]
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
-    output = round(prediction[0], 2)
+    output = int(math.ceil(prediction / 1000)) *1000
     entry = output
     return render_template('result.html', entry=entry)
 
