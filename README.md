@@ -22,9 +22,18 @@ Libraries Used:
 
 Deployment through Heroku and Git.
 
+## Folder structure
+
+#model: - Our saved Machine Learning model to be used in our prediction.
+#predict: - Our function to be used in our Heroku application to predict the price.
+#preprocessing: - Our function to preprocess the scraped data and make it usable for our predict.
+#static: - Contains the .CSS document used in our app.
+#templates: - Contains the .html documents used in our app
+
+
 ## Step 1: Preprocessing the data
 
-Folder used: /Preprocessing
+Folder used: [/Preprocessing](https://github.com/KristofVandewynckel/Deployment_Project/tree/main/preprocessing)
 
 To begin we take the housing data we got from our webscraping project. We use our function preprocess() to clean up all the data, this includes; removing NaN, dealing with unreadable or incomplete data, simplifying values with the same meaning, changing strings to dummies (0/1) for better model comprehension,..
 
@@ -35,6 +44,8 @@ Once this is done everything is saved in a filtered .csv file to be used by our 
 Once we have our clean data we use our train() function from the prediction.py file in our predict folder, to train our model with the filtered data. Here we can change Machine Learning models for increasing accuracy in the future. Just run the train() function with the correct path to the .csv and it will save a Machine Learning model in our model folder with Pickle.
 
 ## Step 3: Predicing a price
+
+Folder used: [/Predict](https://github.com/KristofVandewynckel/Deployment_Project/tree/main/predict)
 
 Once the model is trained and saved by pickle our predict() function (currently inside our app.py file) will take the input given from the user and apply our Machine Learning model to it. This will then give us an estimation on the price of our given house through Flask. We can navigate on the pages to Home or Predict, to query a new estimation.
 
