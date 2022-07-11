@@ -24,11 +24,11 @@ Deployment through Heroku and Git.
 
 ## Folder structure
 
-#model: - Our saved Machine Learning model to be used in our prediction.
-#predict: - Our function to be used in our Heroku application to predict the price.
-#preprocessing: - Our function to preprocess the scraped data and make it usable for our predict.
-#static: - Contains the .CSS document used in our app.
-#templates: - Contains the .html documents used in our app
+- model: - Our saved Machine Learning model to be used in our prediction.
+- predict: - Our function to be used in our Heroku application to predict the price.
+- preprocessing: - Our function to preprocess the scraped data and make it usable for our predict.
+- static: - Contains the .CSS document used in our app.
+- templates: - Contains the .html documents used in our app
 
 
 ## Step 1: Preprocessing the data
