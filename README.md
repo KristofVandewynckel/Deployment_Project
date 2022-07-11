@@ -47,7 +47,7 @@ Once we have our clean data we use our train() function from the prediction.py f
 
 Folder used: [/Predict](https://github.com/KristofVandewynckel/Deployment_Project/tree/main/predict)
 
-Try for yourself [here](https://app-kristof-vandewynckel.herokuapp.com/)
+Try for yourself [here](https://app-kristof-vandewynckel.herokuapp.com/).
 Once the model is trained and saved by pickle our predict() function (currently inside our app.py file) will take the input given from the user and apply our Machine Learning model to it. This will then give us an estimation on the price of our given house through Flask. We can navigate on the pages to Home or Predict, to query a new estimation.
 
 ![image](https://user-images.githubusercontent.com/98815092/167114598-eb18b8b2-2657-4710-97b5-403cef94a80c.png)
